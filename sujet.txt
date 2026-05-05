@@ -1,0 +1,22 @@
+Conception et mise en place du site web de l’UFR SATIC
+
+Khady GUEYE
+Mamadou DIOP
+
+Amar DIENE
+Modou Dieye Thiam
+
+
+Licence 03 Développement et Administration d'Application (D2A)
+Université Alioune Diop
+Mémoire de de fin de formation
+Start prompt : 
+
+Les étudiants en Licence 03 Développement et Administration d'Applications (D2A)
+de l'université Alioune Diop de Bambey que sont Khady GUEYE et Mamadou DIOP
+d'une part et Amar DIENE et Modou Dieye Thiam d'autre part
+travaillent sur le sujet de mémoire dont le thème est :
+"Conception et mise en place du site web de l’UFR SATIC" .
+Il veulent adopter la méthode du design thinking et doivent donc démarrer 
+par la phase de Understanding puis à la phase de Definition. Créer un prompt précis pour windsurf. 
+ce prompt permettra de mettre en place un workflow claire et bien adapté à la situation.
