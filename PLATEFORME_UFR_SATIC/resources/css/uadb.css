@@ -1,0 +1,602 @@
+/* ════════════════════════════════════════════════
+   PORTAIL UFR SATIC — UADB
+   Design System Principal
+════════════════════════════════════════════════ */
+
+/* ── Variables ───────────────────────────────── */
+:root {
+  --uadb-bleu:       #003E7E;
+  --uadb-bleu-dark:  #002d5a;
+  --uadb-bleu-light: #e8f0fb;
+  --uadb-vert:       #00A86B;
+  --uadb-vert-dark:  #007a4d;
+  --uadb-accent:     #FFC857;
+  --uadb-gris:       #F5F7FA;
+  --uadb-texte:      #5E6470;
+  --uadb-blanc:      #FFFFFF;
+  --uadb-border:     #e2e8f0;
+  --shadow-sm:       0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:       0 4px 15px rgba(0,0,0,0.12);
+  --shadow-lg:       0 8px 30px rgba(0,0,0,0.15);
+  --radius-sm:       8px;
+  --radius-md:       12px;
+  --radius-lg:       20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Reset & Base ────────────────────────────── */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--uadb-texte);
+  background-color: var(--uadb-gris);
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* ════════════════════════════════════════════════
+   NAVBAR PUBLIQUE
+════════════════════════════════════════════════ */
+.navbar-uadb {
+  background-color: var(--uadb-bleu) !important;
+  box-shadow: var(--shadow-md);
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar-uadb .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-uadb .navbar-brand .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.navbar-uadb .navbar-brand .logo-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar-uadb .navbar-brand .logo-subtitle {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.navbar-uadb .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.navbar-uadb .nav-link:hover,
+.navbar-uadb .nav-link.active {
+  color: white !important;
+  background-color: rgba(255,255,255,0.15);
+}
+
+.navbar-uadb .btn-connexion {
+  background-color: var(--uadb-vert);
+  color: white !important;
+  border-radius: 25px;
+  padding: 0.4rem 1.2rem !important;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.navbar-uadb .btn-connexion:hover {
+  background-color: var(--uadb-vert-dark);
+  transform: translateY(-1px);
+}
+
+/* ════════════════════════════════════════════════
+   HERO SECTION
+════════════════════════════════════════════════ */
+.hero-section {
+  background: linear-gradient(135deg, var(--uadb-bleu) 0%, #005cbf 100%);
+  color: white;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 50%;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ════════════════════════════════════════════════
+   BOUTONS
+════════════════════════════════════════════════ */
+.btn-uadb {
+  background-color: var(--uadb-bleu);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-uadb:hover {
+  background-color: var(--uadb-bleu-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-vert {
+  background-color: var(--uadb-vert);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-vert:hover {
+  background-color: var(--uadb-vert-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-accent {
+  background-color: var(--uadb-accent);
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-accent:hover {
+  background-color: #e6b84e;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+/* ════════════════════════════════════════════════
+   CARDS
+════════════════════════════════════════════════ */
+.card-uadb {
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s;
+  background: white;
+}
+
+.card-uadb:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-stat {
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  background: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-stat .stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.card-stat .stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--uadb-bleu);
+}
+
+.card-stat .stat-label {
+  font-size: 0.85rem;
+  color: var(--uadb-texte);
+}
+
+/* ════════════════════════════════════════════════
+   SIDEBAR DASHBOARD
+════════════════════════════════════════════════ */
+.sidebar {
+  background: var(--uadb-bleu);
+  min-height: 100vh;
+  width: 260px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  padding: 1.5rem 1.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-brand .brand-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+}
+
+.sidebar-brand .brand-sub {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.sidebar-section-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.4);
+  padding: 1rem 1.2rem 0.3rem;
+}
+
+.sidebar .nav-link {
+  color: rgba(255,255,255,0.75);
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  margin: 2px 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.sidebar .nav-link i {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+/* ── Main content avec sidebar ───────────────── */
+.main-with-sidebar {
+  margin-left: 260px;
+  min-height: 100vh;
+  background-color: var(--uadb-gris);
+}
+
+/* ── Topbar dashboard ────────────────────────── */
+.topbar {
+  background: white;
+  border-bottom: 1px solid var(--uadb-border);
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar .page-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--uadb-bleu);
+}
+
+/* ════════════════════════════════════════════════
+   BADGES STATUT
+════════════════════════════════════════════════ */
+.badge-en-attente {
+  background-color: #FFC857;
+  color: #333;
+  font-weight: 600;
+}
+.badge-en-cours {
+  background-color: #17a2b8;
+  color: white;
+  font-weight: 600;
+}
+.badge-validee {
+  background-color: var(--uadb-vert);
+  color: white;
+  font-weight: 600;
+}
+.badge-rejetee {
+  background-color: #dc3545;
+  color: white;
+  font-weight: 600;
+}
+.badge-publie {
+  background-color: var(--uadb-vert);
+  color: white;
+  font-weight: 600;
+}
+.badge-brouillon {
+  background-color: #6c757d;
+  color: white;
+  font-weight: 600;
+}
+
+/* ════════════════════════════════════════════════
+   TABLES
+════════════════════════════════════════════════ */
+.table-uadb thead th {
+  background-color: var(--uadb-bleu);
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: none;
+  padding: 1rem;
+}
+
+.table-uadb tbody td {
+  padding: 0.85rem 1rem;
+  vertical-align: middle;
+  border-color: var(--uadb-border);
+  font-size: 0.9rem;
+}
+
+.table-uadb tbody tr:hover {
+  background-color: var(--uadb-bleu-light);
+}
+
+/* ════════════════════════════════════════════════
+   FORMULAIRES
+════════════════════════════════════════════════ */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--uadb-bleu);
+  box-shadow: 0 0 0 0.2rem rgba(0, 62, 126, 0.15);
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--uadb-bleu);
+}
+
+/* ════════════════════════════════════════════════
+   ALERTES
+════════════════════════════════════════════════ */
+.alert-uadb {
+  border-radius: var(--radius-sm);
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* ════════════════════════════════════════════════
+   SECTION TITRES
+════════════════════════════════════════════════ */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--uadb-bleu);
+}
+
+.section-subtitle {
+  color: var(--uadb-texte);
+  font-size: 1rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--uadb-vert);
+  border-radius: 2px;
+  margin: 0.8rem auto 1.5rem;
+}
+
+/* ════════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════════ */
+.footer-uadb {
+  background-color: var(--uadb-bleu);
+  color: rgba(255,255,255,0.8);
+  padding: 3rem 0 1rem;
+}
+
+.footer-uadb h5 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-uadb a {
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+}
+
+.footer-uadb a:hover {
+  color: var(--uadb-accent);
+}
+
+.footer-uadb .footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+/* ════════════════════════════════════════════════
+   NOTIFICATIONS
+════════════════════════════════════════════════ */
+.notif-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* ════════════════════════════════════════════════
+   CHATBOT
+════════════════════════════════════════════════ */
+.chatbot-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--uadb-vert);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 9999;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-btn:hover {
+  background: var(--uadb-vert-dark);
+  transform: scale(1.1);
+}
+
+.chatbot-window {
+  position: fixed;
+  bottom: 105px;
+  right: 30px;
+  width: 360px;
+  height: 480px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 9998;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-window.active {
+  display: flex;
+}
+
+.chatbot-header {
+  background: var(--uadb-bleu);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chatbot-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatbot-message {
+  max-width: 80%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.chatbot-message.bot {
+  background: var(--uadb-bleu-light);
+  color: var(--uadb-bleu);
+  align-self: flex-start;
+}
+
+.chatbot-message.user {
+  background: var(--uadb-bleu);
+  color: white;
+  align-self: flex-end;
+}
+
+.chatbot-input {
+  border-top: 1px solid var(--uadb-border);
+  padding: 0.8rem;
+  display: flex;
+  gap: 8px;
+}
+
+/* ════════════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-with-sidebar {
+    margin-left: 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .chatbot-window {
+    width: 90vw;
+    right: 5vw;
+  }
+}
